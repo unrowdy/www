@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito:400,600&display=swap');
+    body {
+      margin: 48px;
+      font: 12pt Montserrat, sans-serif;
+      color: #222;
+    }
+    header {
+      padding: 24px 48px;
+    }
+    h1 {
+      font: 24pt Nunito, sans-serif;
+      margin: 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      margin: 0;
+    }
+    li {
+      flex-basis: 60%;
+      flex-grow: 1;
+    }
+    li > a {
+      display: block;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 1px 8px #ddd;
+      margin: 48px;
+      padding-bottom: 6px;
+    }
+    img {
+      width: 100%;
+    }
+    h2 {
+      font: 20pt Nunito, sans-serif;
+    }
+    h2, p {
+      margin: 16px 24px;
+    }
+    a {
+      color: #222;
+    }
+    li a {
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 48px;
+    }
+    
+    @media (min-width: 800px) {
+      li {
+        flex-basis: 40%;
+      }
+      li:first-child {
+        flex-basis: 70%;
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      li, li:first-child {
+        flex-basis: 20%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>unrowdy</h1> <!-- but <p> on content pages -->
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a href="https://reallysketch.com/app/">
+            <!-- you do want content pages for SEO -->
+            <img src="reallysketch.png" />
+            <h2>Graph paper</h2>
+            <p>Virtual graph paper for online drawing.</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://thinradio.com/">
+            <img src="thinradio.png" />
+            <h2>Radio</h2>
+            <p>Simple client for online radio stations.</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://freecell.unrowdy.com/">
+            <img src="freecell.unrowdy.png" />
+            <h2>FreeCell</h2>
+            <p>No-frills version of FreeCell card game.</p>
+          </a>
+        </li>
+        <!-- can you make the first child be the large one with four?
+             height/width is not even consisstent with 4
+        <li>
+          <a>
+            <img src="https://dummyimage.com/1280x720" />
+            <h2>sudokufu.com</h2>
+            <p>Interactive sudoku solver and teacher.</p>
+          </a>
+        </li>
+        -->
+      </ul>
+    </main>
+    <footer>Source on <a href="https://github.com/unrowdy">GitHub</a></footer>
+  </body>
+</html>
