@@ -1,12 +1,17 @@
 <!doctype html>
+<html lang="en">
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>Unrowdy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito:400,600&display=swap');
     body {
       margin: 48px;
       font: 12pt Montserrat, sans-serif;
       color: #222;
+      background: #eee;
     }
     header {
       padding: 24px 48px;
@@ -14,6 +19,11 @@
     h1 {
       font: 24pt Nunito, sans-serif;
       margin: 0;
+    }
+    h1 img {
+      width: 42px;
+      vertical-align: bottom;
+      margin: 0 16px 0 4px;
     }
     ul {
       list-style: none;
@@ -32,6 +42,7 @@
       display: block;
       border-radius: 4px;
       overflow: hidden;
+      background: #fff;
       box-shadow: 0 1px 8px #ddd;
       margin: 48px;
       padding-bottom: 6px;
@@ -75,7 +86,7 @@
   </head>
   <body>
     <header>
-      <h1>unrowdy</h1> <!-- but <p> on content pages -->
+      <h1><img src="unrowdy-logo.svg" />unrowdy</h1> <!-- but <p> on content pages -->
     </header>
     <main>
       <ul>
